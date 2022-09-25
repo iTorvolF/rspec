@@ -1,6 +1,6 @@
 module Services
   class Week
-    DAY_O_WEEK = {
+    DAY_OF_WEEK = {
       monday: 'понедельник',
       tuesday: 'вторник',
       wednesday: 'среда',
@@ -15,7 +15,7 @@ module Services
     end
 
     def call
-      DAY_O_WEEK
+      DAY_OF_WEEK
     end
   end
 end
