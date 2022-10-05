@@ -1,11 +1,11 @@
+# frozen_string_literal: true
+
 require_relative 'support/array_builder'
 require_relative 'support/enumerable_shared_examples'
 
 RSpec.configure do |config|
-
   config.include ArrayBuilder
   config.expect_with :rspec do |expectations|
-
     expectations.include_chain_clauses_in_custom_matcher_descriptions = true
   end
 

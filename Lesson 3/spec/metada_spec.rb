@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 RSpec.describe Hash do
-	it 'используется в качестве метаданных в RSpec', :fast do |example|
-		pp example.metadata
-	end
+  it 'используется в качестве метаданных в RSpec', :fast do |example|
+    pp example.metadata
+  end
 end
