@@ -3,7 +3,7 @@ RSpec.describe 'Массив в Ruby' do
 
 	it_behaves_like 'Enumerable', Array
 
-	context 'при обращении к квадратным скобкам' do
+	context 'при обращении к квадратным скобкам', enumerable: true do
 		let(:arr) { [1, 2, 3, 4, 5] }
 
 		it 'можно извлекать значения по индексу' do
@@ -25,7 +25,7 @@ RSpec.describe 'Массив в Ruby' do
 		end
 	end
 
-	context 'при обращении к методу' do
+	context 'при обращении к методу', enumerable: true do
 		it(:to_ary) { expect(empty_arr).to respond_to :to_ary }
 	end
 end	
